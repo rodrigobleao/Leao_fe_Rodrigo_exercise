@@ -28,8 +28,9 @@ describe('Teams', () => {
         jest.useRealTimers();
     });
 
-    it('should render spinner while loading', async () => {
-        // TODO - Add code for this test
+    test('should render spinner while loading', async () => {
+        render(<Teams />);
+        expect(screen.getByTestId('spinner')).toBeInTheDocument();
     });
 
     it('should render teams list', async () => {

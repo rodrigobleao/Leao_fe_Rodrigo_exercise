@@ -1,6 +1,6 @@
 import {Teams, TeamOverview, UserData} from 'types';
 
-const getData = async (path = '') => {
+const getData = async <T>(path = ''): Promise<T> => {
     const url = `${process.env.REACT_APP_API_BASE_URL}/${path}`;
     const res = await fetch(url);
     const json = await res.json();
