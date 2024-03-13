@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
-    height: 100px;
     margin: 10px;
     display: flex;
     flex-direction: column;
